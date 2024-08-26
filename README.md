@@ -1,7 +1,3 @@
-Aqui está uma versão melhorada do README para o seu projeto de ingestão de dados:
-
----
-
 ## Projeto Demonstrativo de Ingestão de Dados
 
 Este projeto tem como objetivo demonstrar metodologias para a ingestão de dados em plataformas analíticas, utilizando ferramentas como ClickHouse, MinIO e testes integrados para garantir a qualidade e integridade dos dados.
