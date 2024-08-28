@@ -69,7 +69,7 @@ def receive_data():
         
         # Carregar o CSV diretamente da memória
         try:
-            df_csv = pd.read_csv(file)  # Corrigido: Usar o objeto 'file' diretamente
+            df_csv = pd.read_csv(file)  
         except Exception as e:
             return jsonify({"error": f"Erro ao ler o arquivo CSV: {str(e)}"}), 500
         
