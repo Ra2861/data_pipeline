@@ -40,6 +40,10 @@ Este projeto tem como objetivo demonstrar metodologias para a ingestão de dados
 
 Para testar rodar os testes execute `python .\tests\test_app.py`.
 
+
 ### Considerações Finais
 
 Este projeto serve como um ponto de partida para implementar soluções de ingestão de dados robustas e escaláveis. Ele também demonstra boas práticas em termos de organização de código, tratamento de exceções, e testes automatizados.
+
+![Captura de tela 2024-08-28 142005](https://github.com/user-attachments/assets/cf6c0d6d-ac11-4241-8347-b6fcb1697a4c)
+não vai dar dez pra esse gatinho fofinho :(
