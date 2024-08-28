@@ -7,6 +7,7 @@ Este projeto tem como objetivo demonstrar metodologias para a ingestão de dados
 - **Docker**: Certifique-se de ter o Docker instalado e em funcionamento no seu ambiente.
 - **Visual Studio Code (VSCode)**: Editor de código recomendado para desenvolver e testar o projeto.
 - **Extensão REST Client (VSCode)**: Extensão para facilitar a execução de requisições HTTP diretamente no VSCode.
+- **DBVier**:
 
 ### Instruções para Execução
 
@@ -33,10 +34,11 @@ Este projeto tem como objetivo demonstrar metodologias para a ingestão de dados
    - **MinIO**: Acesse `http://localhost:9001` no seu navegador para visualizar a interface de usuário do MinIO.
    - Na interface de login do minio no user e senha insira minioadmin
    - **ClickHouse**: Utilize ferramentas como DBVisualizer para conectar-se ao ClickHouse, ou acesse a interface HTTP em `http://localhost:8123`.
+   - No visual studio dentro do diretório execute `python .\app.py`
 
 ### Testes
 
-Para testar a integração do MinIO e ClickHouse com o projeto, você pode utilizar a extensão REST Client do VSCode para enviar requisições HTTP simulando a ingestão de dados.
+Para testar rodar os testes execute `python .\tests\test_app.py`.
 
 ### Considerações Finais
 
