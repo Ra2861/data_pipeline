@@ -21,13 +21,15 @@ def receive_data():
     try:
         response = requests.get('https://api.thecatapi.com/v1/images/search')
         data = response.json()
-        primeiro_item = data[0]
-        
-        if primeiro_item:
-            print('url',data['url'])
-            image_url = data['url']
-            
-            df = pd.DataFrame({'image_url': image_url })
+
+        # Verifique se a lista contém elementos (pelo menos um gato)
+        if data:
+            # Pega o primeiro elemento da lista (assumindo que há um gato)
+            primeiro_item = data[0]
+            # Extrai a URL do dicionário dentro do primeiro elemento
+            image_url = primeiro_item['url']
+            # Crie o DataFrame com a URL
+            df = pd.DataFrame({'image_url': [image_url]})
             client = get_client()  # Obter o cliente ClickHouse
             insert_dataframe(client, 'cat_images', df)
             return jsonify({"message": "Imagem de gato baixada e salva com sucesso"}), 200
